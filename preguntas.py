@@ -124,7 +124,7 @@ def pregunta_03():
     # Importe Pipeline
      from sklearn.linear_model import LogisticRegression
      from sklearn.preprocessing import OneHotEncoder
-     from sklearnpipeline import Pipeline
+     from sklearn.pipeline import Pipeline
 
     # Cargue las variables.
     X_train, _, y_train, _ = pregunta_02()
