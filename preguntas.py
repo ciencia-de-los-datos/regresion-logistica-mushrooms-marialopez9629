@@ -122,7 +122,7 @@ def pregunta_03():
     # Importe LogisticRegressionCV
     # Importe OneHotEncoder
     # Importe Pipeline
-    from sklearn.linear_model import LogisticRegression
+    from sklearn.linear_model import LogisticRegressionCV
     from sklearn.preprocessing import OneHotEncoder
     from sklearn.pipeline import Pipeline
 
@@ -134,7 +134,7 @@ def pregunta_03():
     pipeline = Pipeline(
         steps=[
             ("OneHotEncoder", OneHotEncoder()),
-            ("LogisticRegression", LogisticRegression(Cs=10)),
+            ("LogisticRegression", LogisticRegressionCV(Cs=10)),
         ],
     )
 
